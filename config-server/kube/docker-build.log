@@ -1,0 +1,31 @@
+Untagged: 10.14.255.176/spring-cloud/config:latest
+Untagged: 10.14.255.176/spring-cloud/config@sha256:292b333ca67b0fb027f4a3e6915340402da0fe8229fcf1e94358c13a2e7f7cdf
+Deleted: sha256:63b32451a3ba967c35b33454eb0d4543170048921d9869e9e7719eee8499a5e8
+Deleted: sha256:bae687a19ebfe538c5a14c6a9cbfea39c782daa3e6c58f207310f4535977ff31
+Deleted: sha256:ecec65efad5b532b48f015b734f8d03e91150eb65fa95bffe85f29641b126870
+Deleted: sha256:52b271b4b63ccfbcbfa1c0a935296c17e6363038929e44398a616b1757ae84df
+Sending build context to Docker daemon 123.1 MB
+Step 1/4 : FROM frolvlad/alpine-oraclejdk8:slim
+ ---> ce0bf5ef511b
+Step 2/4 : EXPOSE 8888
+ ---> Running in 992e17c119c6
+ ---> a58669bc6527
+Removing intermediate container 992e17c119c6
+Step 3/4 : COPY config-server.jar .
+ ---> 80abb954925e
+Removing intermediate container 6f98647e1bf6
+Step 4/4 : CMD java -jar config-server.jar
+ ---> Running in ae5e4ad9920e
+ ---> 4a8a9b128171
+Removing intermediate container ae5e4ad9920e
+Successfully built 4a8a9b128171
+The push refers to a repository [10.14.255.176/spring-cloud/config]
+a62025f82fa9: Preparing
+a41c8c4bcb8e: Preparing
+d677fc407b01: Preparing
+e154057080f4: Preparing
+a41c8c4bcb8e: Layer already exists
+e154057080f4: Pushed
+d677fc407b01: Pushed
+a62025f82fa9: Pushed
+latest: digest: sha256:aa40c76a66544b0c1b4b5185a757b4e43785c91cc898cba86652cddc7598fcba size: 1163
