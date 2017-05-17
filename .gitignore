@@ -7,6 +7,4 @@
 .DS_Store
 
 #Target Files
-concourse-demo-web/target
-concourse-demo-restful/target
-
+*/target
